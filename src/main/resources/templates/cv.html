@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title th:text=" 'Bienvenido,' + ${cv.nombre}"></title>
+</head>
+
+    <body>
+
+    <div>
+
+        <div th:text="${cv.titulo}"></div>
+        <div th:text="${cv.nombre}"></div>
+        <div th:text="${cv.apellidoPaterno}"></div>
+        <div th:text="${cv.apellidoMaterno}"></div>
+
+    </div>
+
+    </body>
+
+</html>

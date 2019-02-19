@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Hello</title>
+
+    <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+
+    <link rel="stylesheet" href="../static/css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+<form action="#" th:action="@{/fooform}" th:object="${command}" method="post">
+
+
+<p>Simple Text Field: <input type="text" th:field="*{textField}" /></p>
+<p>Text Area Field: <textarea th:field="*{textareaField}" ></textarea></p>
+
+</form>
+</body>
+</html>

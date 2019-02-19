@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -20,6 +21,8 @@ public class HelloWebController {
     public String helloWorldW(Model model){
 
         model.addAttribute("people",getPeople());
+        model.addAttribute("ejemplo","Soy un ejemplo");
+        model.addAttribute("ejemplo2",new Date());
 
         return "hello";
     }
@@ -28,6 +31,7 @@ public class HelloWebController {
 
         ModelAndView modelAndView=new ModelAndView("hello");
         modelAndView.addObject("people",getPeople());
+        modelAndView.addObject("ejemplo","Soy ejemplo MAV");
         return modelAndView;
     }
 
